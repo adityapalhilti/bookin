@@ -2,6 +2,7 @@ package com.bookin.bookin.service;
 
 import com.bookin.bookin.dao.bookRepository;
 import com.bookin.bookin.entity.Book;
+import com.bookin.bookin.kafka.Producer;
 import com.bookin.bookin.requestmodels.AddBookRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -57,6 +58,7 @@ public class AdminService {
         book.setCategory(addBookRequest.getCategory());
         book.setImg(addBookRequest.getImg());
         bookRepository1.save(book);
+
     }
 
     public void deleteBook(Long bookId) throws Exception {
