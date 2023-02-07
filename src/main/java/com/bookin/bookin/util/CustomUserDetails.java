@@ -1,26 +1,39 @@
 package com.bookin.bookin.util;
 
+import com.bookin.bookin.dao.UserRepository;
 import com.bookin.bookin.entity.Users;
+import com.bookin.bookin.requestmodels.AuthorityModel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
+@NoArgsConstructor
+@Getter
+@Setter
 public class CustomUserDetails implements UserDetails {
     private String userName;
     private String password;
-    private boolean active;
+
+    private String name;
+
+    private String role="user";
+    private boolean active=true;
     private List<GrantedAuthority> authorities;
+
+
 
     public CustomUserDetails(Users user) {
         this.userName=user.getUsername();
         this.password=user.getPassword();
         this.active=user.isActive();
-        this.authorities=Arrays.stream(user.getRoles().split(","))
+        this.authorities=Arrays.stream(user.getRole().split(","))
                 .map(SimpleGrantedAuthority::new)
                 .collect(Collectors.toList());
     }
@@ -28,6 +41,7 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
+
         return authorities;
     }
 
@@ -35,6 +49,7 @@ public class CustomUserDetails implements UserDetails {
     public String getPassword() {
         return password;
     }
+
 
     @Override
     public String getUsername() {

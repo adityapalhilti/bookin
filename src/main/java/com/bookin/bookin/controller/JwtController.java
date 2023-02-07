@@ -7,6 +7,7 @@ import com.bookin.bookin.requestmodels.JwtRequest;
 import com.bookin.bookin.requestmodels.JwtResponse;
 import com.bookin.bookin.service.CustomUserDetailService;
 import com.bookin.bookin.service.UserServiceImpl;
+import com.bookin.bookin.util.CustomUserDetails;
 import com.bookin.bookin.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -33,13 +34,13 @@ public class JwtController {
     @Autowired
     private Producer producer;
 
-    @GetMapping("/welcome")
+    @GetMapping("/welcom")
     public ResponseEntity<String> publish(@RequestParam("message") String message){
         producer.sendMessage(message);
         return ResponseEntity.ok("Message sent to the topic");
     }
 
-    @RequestMapping("/welcom")
+    @RequestMapping("/welcome")
     public String welcome()
     {
         //producer.sendMessage("topic","qwertuiop");
@@ -47,15 +48,20 @@ public class JwtController {
     }
 
     @PostMapping("/signup")
-    public ResponseEntity<JwtResponse> registerUser(@RequestBody JwtRegister jwtRegister) throws Exception {
-        return  ResponseEntity.ok(userServiceImpl.registerUser(jwtRegister));
+    public ResponseEntity<CustomUserDetails> register(@RequestBody CustomUserDetails customUserDetails) throws Exception {
+        CustomUserDetails customUserDetails1=customUserDetailService.register(customUserDetails);
+        ResponseEntity<CustomUserDetails> result=new ResponseEntity<>(customUserDetails1,HttpStatus.CREATED);
+        return result;
 
     }
 
-    @PostMapping("/generateToken")
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
     public ResponseEntity<JwtResponse> generateToken(@RequestBody JwtRequest jwtRequest){
 
-        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(jwtRequest.getUserName(),jwtRequest.getPassword()));
+       // authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(jwtRequest.getUserName(),jwtRequest.getPassword()));
+        UsernamePasswordAuthenticationToken upat = new UsernamePasswordAuthenticationToken(jwtRequest.getUserName(), jwtRequest.getPassword());
+        //authenticate the user
+        authenticationManager.authenticate(upat);
 
         UserDetails userDetails= customUserDetailService.loadUserByUsername(jwtRequest.getUserName());
 

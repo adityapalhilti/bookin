@@ -14,7 +14,7 @@ import lombok.Setter;
 public class JwtResponse {
 
     private String token;
-    private String roles;
+    private String role;
     private String name;
 
     public JwtResponse(String jwtToken) {

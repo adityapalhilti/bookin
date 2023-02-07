@@ -12,5 +12,5 @@ public class UserDao {
     UserRepository userRepository;
 
     public void addUser(Users user) { userRepository.save(user);}
-    public Optional<Users> findByUsername(String username) {return userRepository.findByUsername(username);}
+    public Optional<Users> findByUsername(String username) {return Optional.ofNullable(userRepository.findByUsername(username));}
 }
