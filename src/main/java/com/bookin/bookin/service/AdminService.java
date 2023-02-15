@@ -24,7 +24,7 @@ public class AdminService {
     JsonParser jsonParser;
 
     @Autowired
-    Producer kafkaProducer;
+    Producer producer;
     @Autowired
     public AdminService (bookRepository bookRepository1){
         this.bookRepository1=bookRepository1;
@@ -48,7 +48,7 @@ public class AdminService {
 
         Optional<Book> book =bookRepository1.findById(bookId);
 
-        if(!book.isPresent() || book.get().getCopiesAvailable()<=0 || book.get().getCopies()<=0){
+        if(book.isEmpty() || book.get().getCopiesAvailable()<=0 || book.get().getCopies()<=0){
             throw new Exception("Book not found or quantity locked");
         }
         book.get().setCopiesAvailable(book.get().getCopiesAvailable()-1);
@@ -86,6 +86,6 @@ public class AdminService {
 
     private void sendMessageBooks(String message) throws Exception {
 
-        Producer.sendMessage(message);
+        producer.sendMessage(message);
     }
 }
