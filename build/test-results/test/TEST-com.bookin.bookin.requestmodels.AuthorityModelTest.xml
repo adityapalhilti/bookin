@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bookin.bookin.requestmodels.AuthorityModelTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-15T22:18:46" hostname="IN2771" time="0.001">
+  <properties/>
+  <testcase name="testConstructor()" classname="com.bookin.bookin.requestmodels.AuthorityModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
