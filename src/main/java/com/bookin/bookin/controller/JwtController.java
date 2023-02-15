@@ -26,8 +26,6 @@ public class JwtController {
 
     @Autowired
     private JwtUtil jwtUtil;
-    @Autowired
-    private UserServiceImpl userServiceImpl;
 
     @Autowired
     private Producer producer;
