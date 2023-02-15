@@ -10,7 +10,7 @@ public class AuditAdd {
     @Autowired
     AuditRepository auditRepository;
 
-    @KafkaListener(topics="topic", groupId="myGroup")
+    //@KafkaListener(topics="topic", groupId="myGroup")
     public void addAudit(AuditRecord audit) {
         auditRepository.save(audit);
     }

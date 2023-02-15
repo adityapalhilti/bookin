@@ -17,13 +17,18 @@ public class AuditRecord {
     @GeneratedValue(strategy = GenerationType.AUTO)
     long auditId;
     @Column(name="bookId")
-    String bookId;
+    Long bookId;
 
     @Column(name="timestamp")
     Timestamp updatedOn=Timestamp.from(Instant.now());;
 
     @Column(name="action")
     String action;
+
+    public AuditRecord(Long bookid, String action) {
+        this.bookId = bookid;
+        this.action = action;
+    }
 
 
 }

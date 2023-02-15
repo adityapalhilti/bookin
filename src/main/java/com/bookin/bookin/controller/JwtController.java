@@ -2,11 +2,9 @@ package com.bookin.bookin.controller;
 
 
 import com.bookin.bookin.kafka.Producer;
-import com.bookin.bookin.requestmodels.JwtRegister;
 import com.bookin.bookin.requestmodels.JwtRequest;
 import com.bookin.bookin.requestmodels.JwtResponse;
 import com.bookin.bookin.service.CustomUserDetailService;
-import com.bookin.bookin.service.UserServiceImpl;
 import com.bookin.bookin.util.CustomUserDetails;
 import com.bookin.bookin.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;

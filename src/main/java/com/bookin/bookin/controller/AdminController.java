@@ -28,13 +28,14 @@ public class AdminController {
     }
 
     @PostMapping("/add/book")
-    public void postBook(@RequestBody AddBookRequest addBookRequest){
+    public void postBook(@RequestBody AddBookRequest addBookRequest) throws Exception {
         adminService.postBook(addBookRequest);
     }
 
     @DeleteMapping("/delete/book")
     public void deleteBook(@RequestParam Long bookId) throws Exception{
         adminService.deleteBook(bookId);
+
     }
 
 }

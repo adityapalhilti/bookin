@@ -1,9 +1,13 @@
 package com.bookin.bookin.service;
 
+import com.bookin.bookin.audit.AuditRecord;
 import com.bookin.bookin.dao.bookRepository;
 import com.bookin.bookin.entity.Book;
 import com.bookin.bookin.kafka.Producer;
 import com.bookin.bookin.requestmodels.AddBookRequest;
+import com.bookin.bookin.util.JsonParser;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +19,12 @@ import java.util.Optional;
 public class AdminService {
 
     private bookRepository bookRepository1;
+
+    @Autowired
+    JsonParser jsonParser;
+
+    @Autowired
+    Producer kafkaProducer;
     @Autowired
     public AdminService (bookRepository bookRepository1){
         this.bookRepository1=bookRepository1;
@@ -31,6 +41,7 @@ public class AdminService {
         book.get().setCopies(book.get().getCopies()+1);
 
         bookRepository1.save(book.get());
+        sendMessageBooks(jsonParser.stringify(new AuditRecord( bookId, "UPDATE")));
     }
 
     public void decreaseBookQuantity(Long bookId) throws Exception{
@@ -44,11 +55,12 @@ public class AdminService {
         book.get().setCopies(book.get().getCopies()-1);
 
         bookRepository1.save(book.get());
+        sendMessageBooks(jsonParser.stringify(new AuditRecord( bookId, "UPDATE")));
     }
 
 
 
-    public void postBook(AddBookRequest addBookRequest){
+    public void postBook(AddBookRequest addBookRequest) throws Exception {
         Book book = new Book();
         book.setTitle(addBookRequest.getTitle());
         book.setAuthor(addBookRequest.getAuthor());
@@ -58,7 +70,7 @@ public class AdminService {
         book.setCategory(addBookRequest.getCategory());
         book.setImg(addBookRequest.getImg());
         bookRepository1.save(book);
-
+        sendMessageBooks(jsonParser.stringify(new AuditRecord( book.getId(), "CREATE")));
     }
 
     public void deleteBook(Long bookId) throws Exception {
@@ -69,6 +81,11 @@ public class AdminService {
             throw new Exception("Book not found");
         }
         bookRepository1.delete(book.get());
+        sendMessageBooks(jsonParser.stringify(new AuditRecord( bookId, "DELETE")));
     }
 
+    private void sendMessageBooks(String message) throws Exception {
+
+        Producer.sendMessage(message);
+    }
 }
