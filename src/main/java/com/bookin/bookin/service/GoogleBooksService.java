@@ -1,7 +1,7 @@
 package com.bookin.bookin.service;
 
 import com.bookin.bookin.GoogleBooksApi.GoogleBooks;
-import com.bookin.bookin.GoogleBooksApi.ApiWrapper;
+import com.bookin.bookin.GoogleBooksApi.GoogleApiWrapper;
 import com.bookin.bookin.entity.Book;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
@@ -17,10 +17,10 @@ public class GoogleBooksService {
         return new RestTemplate();
     }
     public List<Book> getmodifiedbooks(GoogleBooks googlebooks) {
-        List<ApiWrapper> googlebookitems=googlebooks.getItems();
+        List<GoogleApiWrapper> googlebookitems=googlebooks.getItems();
 
         List<Book> bookslist = new ArrayList<>();
-        for (ApiWrapper apiwrapper : googlebookitems){
+        for (GoogleApiWrapper apiwrapper : googlebookitems){
             Book book=new Book();
             try {
                 book.setTitle(apiwrapper.getVolumeInfo().getTitle());

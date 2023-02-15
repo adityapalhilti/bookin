@@ -8,7 +8,7 @@ import java.util.List;
 public class GoogleBooks {
 
     private int totalItems;
-    private List<ApiWrapper> items;
+    private List<GoogleApiWrapper> items;
 
 
     public int getTotalItems() {
@@ -19,11 +19,11 @@ public class GoogleBooks {
         this.totalItems = totalItems;
     }
 
-    public List<ApiWrapper> getItems() {
+    public List<GoogleApiWrapper> getItems() {
         return items;
     }
 
-    public void setItems(List<ApiWrapper> items) {
+    public void setItems(List<GoogleApiWrapper> items) {
         this.items = items;
     }
 

@@ -1,9 +1,7 @@
 package com.bookin.bookin.service;
-import com.bookin.bookin.audit.AuditRecord;
-import com.bookin.bookin.audit.AuditAdd;
+import com.bookin.bookin.audit.AuditDao;
 import com.bookin.bookin.util.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
@@ -13,7 +11,7 @@ public class AuditServiceImpl implements AuditService{
 
 
     @Autowired
-    AuditAdd auditAdd;
+    AuditDao auditAdd;
 
     //ObjectMapper mapper = new ObjectMapper();
     @KafkaListener(topics="topic", groupId="myGroup")
