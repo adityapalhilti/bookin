@@ -33,6 +33,8 @@ public class CustomUserDetailService implements UserDetailsService {
         BeanUtils.copyProperties(user,customUserDetails);
         return customUserDetails;
     }
+
+
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
 

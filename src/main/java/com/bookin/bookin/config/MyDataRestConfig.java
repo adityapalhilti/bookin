@@ -12,7 +12,7 @@ import javax.xml.xpath.XPath;
 @Configuration
 public class MyDataRestConfig implements RepositoryRestConfigurer {
 
-    private String theAllowedOrigins = "http://localhost:3000";
+    private String theAllowedOrigins = "https://adityabook.netlify.app";
 
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config , CorsRegistry cors){
 

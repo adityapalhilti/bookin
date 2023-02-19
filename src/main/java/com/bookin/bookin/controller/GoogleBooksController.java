@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("https://adityabook.netlify.app")
 @RestController
 @RequestMapping("api/admin")
 public class GoogleBooksController {

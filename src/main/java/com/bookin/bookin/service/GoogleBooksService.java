@@ -20,22 +20,22 @@ public class GoogleBooksService {
         List<GoogleApiWrapper> googlebookitems=googlebooks.getItems();
 
         List<Book> bookslist = new ArrayList<>();
-        for (GoogleApiWrapper apiwrapper : googlebookitems){
+        for (GoogleApiWrapper googleApiWrapper : googlebookitems){
             Book book=new Book();
             try {
-                book.setTitle(apiwrapper.getVolumeInfo().getTitle());
+                book.setTitle(googleApiWrapper.getVolumeInfo().getTitle());
             }
             catch (Exception err){
 
             }
             try{
-                book.setAuthor(apiwrapper.getVolumeInfo().getAuthors().get(0));
+                book.setAuthor(googleApiWrapper.getVolumeInfo().getAuthors().get(0));
             }
             catch (Exception err){
 
             }
             try{
-                book.setDescription(apiwrapper.getVolumeInfo().getDescription());
+                book.setDescription(googleApiWrapper.getVolumeInfo().getDescription());
             }
             catch (Exception err){
 
