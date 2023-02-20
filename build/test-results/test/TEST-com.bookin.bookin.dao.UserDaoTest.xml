@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bookin.bookin.dao.UserDaoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-20T07:10:19" hostname="IN2771" time="0.038">
+<testsuite name="com.bookin.bookin.dao.UserDaoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-20T07:44:16" hostname="IN2771" time="0.033">
   <properties/>
-  <testcase name="testAddUser()" classname="com.bookin.bookin.dao.UserDaoTest" time="0.036"/>
+  <testcase name="testAddUser()" classname="com.bookin.bookin.dao.UserDaoTest" time="0.031"/>
   <testcase name="testFindByUsername()" classname="com.bookin.bookin.dao.UserDaoTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
