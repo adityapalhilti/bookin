@@ -1,104 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bookin.bookin.controller.JwtControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-02-20T06:36:16" hostname="IN2771" time="0.345">
+<testsuite name="com.bookin.bookin.controller.JwtControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-02-20T06:45:29" hostname="IN2771" time="0.308">
   <properties/>
-  <testcase name="testGenerateToken()" classname="com.bookin.bookin.controller.JwtControllerTest" time="0.124"/>
-  <testcase name="testRegister()" classname="com.bookin.bookin.controller.JwtControllerTest" time="0.068"/>
-  <testcase name="testWelcome2()" classname="com.bookin.bookin.controller.JwtControllerTest" time="0.089"/>
-  <testcase name="testWelcome()" classname="com.bookin.bookin.controller.JwtControllerTest" time="0.053"/>
-  <system-out><![CDATA[12:06:16.398 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
+  <testcase name="testGenerateToken()" classname="com.bookin.bookin.controller.JwtControllerTest" time="0.14"/>
+  <testcase name="testRegister()" classname="com.bookin.bookin.controller.JwtControllerTest" time="0.065"/>
+  <testcase name="testWelcome2()" classname="com.bookin.bookin.controller.JwtControllerTest" time="0.062"/>
+  <testcase name="testWelcome()" classname="com.bookin.bookin.controller.JwtControllerTest" time="0.035"/>
+  <system-out><![CDATA[12:15:29.239 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
 	c.b.b.c.JwtController:
 	{GET [/welcom]}: publish(String)
 	{POST [/signup]}: register(CustomUserDetails)
 	{POST [/login]}: generateToken(JwtRequest)
 	{ [/welcome]}: welcome()
-12:06:16.410 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 4 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
-12:06:16.416 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-12:06:16.426 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-12:06:16.427 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-12:06:16.427 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
-12:06:16.428 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
-12:06:16.428 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
-12:06:16.428 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@656ec00d
-12:06:16.428 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3b8507df
-12:06:16.428 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-12:06:16.428 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 1 ms
-12:06:16.429 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - POST "/login", parameters={}
-12:06:16.429 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.bookin.bookin.controller.JwtController#generateToken(JwtRequest)
-12:06:16.434 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json" to [com.bookin.bookin.requestmodels.JwtRequest@41bb1f09]
-12:06:16.444 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-12:06:16.444 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [com.bookin.bookin.requestmodels.JwtResponse@15586843]
-12:06:16.460 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
-12:06:16.494 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
+12:15:29.248 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 4 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+12:15:29.255 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12:15:29.257 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12:15:29.258 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+12:15:29.258 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+12:15:29.258 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+12:15:29.258 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+12:15:29.267 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@656ec00d
+12:15:29.267 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3b8507df
+12:15:29.267 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:15:29.267 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 9 ms
+12:15:29.268 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - POST "/login", parameters={}
+12:15:29.268 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.bookin.bookin.controller.JwtController#generateToken(JwtRequest)
+12:15:29.272 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json" to [com.bookin.bookin.requestmodels.JwtRequest@41bb1f09]
+12:15:29.279 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+12:15:29.281 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [com.bookin.bookin.requestmodels.JwtResponse@15586843]
+12:15:29.289 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
+12:15:29.314 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
 	c.b.b.c.JwtController:
 	{GET [/welcom]}: publish(String)
 	{POST [/signup]}: register(CustomUserDetails)
 	{POST [/login]}: generateToken(JwtRequest)
 	{ [/welcome]}: welcome()
-12:06:16.496 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 4 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
-12:06:16.500 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-12:06:16.503 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-12:06:16.503 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-12:06:16.503 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
-12:06:16.505 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
-12:06:16.506 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
-12:06:16.512 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6598caab
-12:06:16.512 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@47f2c722
-12:06:16.512 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-12:06:16.512 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 9 ms
-12:06:16.513 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - POST "/signup", parameters={}
-12:06:16.513 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.bookin.bookin.controller.JwtController#register(CustomUserDetails)
-12:06:16.520 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json" to [com.bookin.bookin.util.CustomUserDetails@44fb6ebd]
-12:06:16.531 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-12:06:16.532 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [com.bookin.bookin.util.CustomUserDetails@5da57a64]
-12:06:16.532 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 201 CREATED
-12:06:16.552 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
+12:15:29.318 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 4 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+12:15:29.326 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12:15:29.330 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12:15:29.330 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+12:15:29.331 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+12:15:29.331 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+12:15:29.331 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+12:15:29.331 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6598caab
+12:15:29.331 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@47f2c722
+12:15:29.331 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:15:29.331 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 0 ms
+12:15:29.332 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - POST "/signup", parameters={}
+12:15:29.337 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.bookin.bookin.controller.JwtController#register(CustomUserDetails)
+12:15:29.355 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json" to [com.bookin.bookin.util.CustomUserDetails@44fb6ebd]
+12:15:29.359 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+12:15:29.359 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [com.bookin.bookin.util.CustomUserDetails@5da57a64]
+12:15:29.359 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 201 CREATED
+12:15:29.373 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
 	c.b.b.c.JwtController:
 	{GET [/welcom]}: publish(String)
 	{POST [/signup]}: register(CustomUserDetails)
 	{POST [/login]}: generateToken(JwtRequest)
 	{ [/welcome]}: welcome()
-12:06:16.553 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 4 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
-12:06:16.566 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-12:06:16.568 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-12:06:16.568 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-12:06:16.568 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
-12:06:16.569 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
-12:06:16.569 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
-12:06:16.569 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5103eea2
-12:06:16.569 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@762405bf
-12:06:16.570 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-12:06:16.570 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 2 ms
-12:06:16.571 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - GET "/welcome", parameters={}
-12:06:16.604 [Test worker] DEBUG org.springframework.web.util.UrlPathHelper - Could not decode request string [] with encoding 'Encoding': falling back to platform default encoding; exception message: Encoding
-12:06:16.607 [Test worker] DEBUG org.springframework.web.util.UrlPathHelper - Could not decode request string [/welcome] with encoding 'Encoding': falling back to platform default encoding; exception message: Encoding
-12:06:16.607 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.bookin.bookin.controller.JwtController#welcome()
-12:06:16.608 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-12:06:16.615 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing ["This is private page"]
-12:06:16.617 [Test worker] DEBUG org.springframework.web.util.UrlPathHelper - Could not decode request string [welcome] with encoding 'Encoding': falling back to platform default encoding; exception message: Encoding
-12:06:16.619 [Test worker] DEBUG org.springframework.web.util.UrlPathHelper - Could not decode request string [] with encoding 'Encoding': falling back to platform default encoding; exception message: Encoding
-12:06:16.622 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
-12:06:16.648 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
+12:15:29.374 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 4 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+12:15:29.380 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12:15:29.384 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12:15:29.385 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+12:15:29.385 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+12:15:29.385 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+12:15:29.385 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+12:15:29.385 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5103eea2
+12:15:29.385 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@762405bf
+12:15:29.385 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:15:29.385 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 0 ms
+12:15:29.386 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - GET "/welcome", parameters={}
+12:15:29.408 [Test worker] DEBUG org.springframework.web.util.UrlPathHelper - Could not decode request string [] with encoding 'Encoding': falling back to platform default encoding; exception message: Encoding
+12:15:29.409 [Test worker] DEBUG org.springframework.web.util.UrlPathHelper - Could not decode request string [/welcome] with encoding 'Encoding': falling back to platform default encoding; exception message: Encoding
+12:15:29.410 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.bookin.bookin.controller.JwtController#welcome()
+12:15:29.411 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+12:15:29.411 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing ["This is private page"]
+12:15:29.414 [Test worker] DEBUG org.springframework.web.util.UrlPathHelper - Could not decode request string [welcome] with encoding 'Encoding': falling back to platform default encoding; exception message: Encoding
+12:15:29.422 [Test worker] DEBUG org.springframework.web.util.UrlPathHelper - Could not decode request string [] with encoding 'Encoding': falling back to platform default encoding; exception message: Encoding
+12:15:29.423 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
+12:15:29.430 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
 	c.b.b.c.JwtController:
 	{GET [/welcom]}: publish(String)
 	{POST [/signup]}: register(CustomUserDetails)
 	{POST [/login]}: generateToken(JwtRequest)
 	{ [/welcome]}: welcome()
-12:06:16.656 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 4 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
-12:06:16.672 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-12:06:16.681 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-12:06:16.682 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
-12:06:16.682 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
-12:06:16.682 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
-12:06:16.682 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
-12:06:16.682 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@794c5f5e
-12:06:16.682 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4ab66127
-12:06:16.682 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-12:06:16.682 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 0 ms
-12:06:16.683 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - GET "/welcome", parameters={}
-12:06:16.683 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.bookin.bookin.controller.JwtController#welcome()
-12:06:16.684 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-12:06:16.684 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing ["This is private page"]
-12:06:16.685 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
+12:15:29.433 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 4 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+12:15:29.447 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12:15:29.449 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12:15:29.457 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+12:15:29.458 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+12:15:29.458 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+12:15:29.458 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+12:15:29.458 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@794c5f5e
+12:15:29.458 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4ab66127
+12:15:29.458 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:15:29.458 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 0 ms
+12:15:29.458 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - GET "/welcome", parameters={}
+12:15:29.459 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.bookin.bookin.controller.JwtController#welcome()
+12:15:29.459 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+12:15:29.460 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing ["This is private page"]
+12:15:29.460 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bookin.bookin.service.GoogleBooksServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-02-20T06:36:18" hostname="IN2771" time="0.09">
+<testsuite name="com.bookin.bookin.service.GoogleBooksServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-02-20T06:45:31" hostname="IN2771" time="0.087">
   <properties/>
-  <testcase name="testGetmodifiedbooks2()" classname="com.bookin.bookin.service.GoogleBooksServiceTest" time="0.023"/>
-  <testcase name="testGetmodifiedbooks3()" classname="com.bookin.bookin.service.GoogleBooksServiceTest" time="0.01"/>
-  <testcase name="testGetmodifiedbooks4()" classname="com.bookin.bookin.service.GoogleBooksServiceTest" time="0.033"/>
-  <testcase name="testGetmodifiedbooks()" classname="com.bookin.bookin.service.GoogleBooksServiceTest" time="0.007"/>
-  <testcase name="testGetRestTemplate()" classname="com.bookin.bookin.service.GoogleBooksServiceTest" time="0.009"/>
+  <testcase name="testGetmodifiedbooks2()" classname="com.bookin.bookin.service.GoogleBooksServiceTest" time="0.029"/>
+  <testcase name="testGetmodifiedbooks3()" classname="com.bookin.bookin.service.GoogleBooksServiceTest" time="0.008"/>
+  <testcase name="testGetmodifiedbooks4()" classname="com.bookin.bookin.service.GoogleBooksServiceTest" time="0.032"/>
+  <testcase name="testGetmodifiedbooks()" classname="com.bookin.bookin.service.GoogleBooksServiceTest" time="0.002"/>
+  <testcase name="testGetRestTemplate()" classname="com.bookin.bookin.service.GoogleBooksServiceTest" time="0.015"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

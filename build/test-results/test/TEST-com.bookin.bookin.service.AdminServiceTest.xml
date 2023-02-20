@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bookin.bookin.service.AdminServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-02-20T06:36:17" hostname="IN2771" time="0.172">
+<testsuite name="com.bookin.bookin.service.AdminServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-02-20T06:45:30" hostname="IN2771" time="0.269">
   <properties/>
-  <testcase name="testIncreaseBookQuantity()" classname="com.bookin.bookin.service.AdminServiceTest" time="0.067"/>
-  <testcase name="testDecreaseBookQuantity()" classname="com.bookin.bookin.service.AdminServiceTest" time="0.099"/>
-  <testcase name="testDeleteBook()" classname="com.bookin.bookin.service.AdminServiceTest" time="0.005"/>
+  <testcase name="testIncreaseBookQuantity()" classname="com.bookin.bookin.service.AdminServiceTest" time="0.131"/>
+  <testcase name="testDecreaseBookQuantity()" classname="com.bookin.bookin.service.AdminServiceTest" time="0.129"/>
+  <testcase name="testDeleteBook()" classname="com.bookin.bookin.service.AdminServiceTest" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
