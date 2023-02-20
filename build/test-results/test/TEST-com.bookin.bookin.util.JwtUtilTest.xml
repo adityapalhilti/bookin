@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bookin.bookin.util.JwtUtilTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-19T19:52:48" hostname="IN2771" time="0.941">
+<testsuite name="com.bookin.bookin.util.JwtUtilTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-20T06:36:18" hostname="IN2771" time="0.773">
   <properties/>
-  <testcase name="testGenerateToken()" classname="com.bookin.bookin.util.JwtUtilTest" time="0.941"/>
-  <system-out><![CDATA[01:22:48.038 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Setting field 'SECRET_KEY' of type [null] on target object [com.bookin.bookin.util.JwtUtil@77b22b05] or target class [class com.bookin.bookin.util.JwtUtil] to value [tmnebatxzn]
+  <testcase name="testGenerateToken()" classname="com.bookin.bookin.util.JwtUtilTest" time="0.773"/>
+  <system-out><![CDATA[12:06:18.211 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Setting field 'SECRET_KEY' of type [null] on target object [com.bookin.bookin.util.JwtUtil@53d9af1] or target class [class com.bookin.bookin.util.JwtUtil] to value [tmnebatxzn]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

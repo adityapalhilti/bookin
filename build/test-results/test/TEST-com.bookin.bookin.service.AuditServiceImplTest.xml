@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bookin.bookin.service.AuditServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-19T19:52:46" hostname="IN2771" time="0.967">
+<testsuite name="com.bookin.bookin.service.AuditServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-20T06:36:17" hostname="IN2771" time="0.659">
   <properties/>
-  <testcase name="testConsume()" classname="com.bookin.bookin.service.AuditServiceImplTest" time="0.967"/>
+  <testcase name="testConsume()" classname="com.bookin.bookin.service.AuditServiceImplTest" time="0.659"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

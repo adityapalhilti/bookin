@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bookin.bookin.service.CustomUserDetailServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-02-19T19:52:47" hostname="IN2771" time="0.206">
+<testsuite name="com.bookin.bookin.service.CustomUserDetailServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-02-20T06:36:17" hostname="IN2771" time="0.106">
   <properties/>
-  <testcase name="testLoadUserByUsername()" classname="com.bookin.bookin.service.CustomUserDetailServiceTest" time="0.036"/>
-  <testcase name="testRegister()" classname="com.bookin.bookin.service.CustomUserDetailServiceTest" time="0.011"/>
-  <testcase name="testRegister2()" classname="com.bookin.bookin.service.CustomUserDetailServiceTest" time="0.152"/>
+  <testcase name="testLoadUserByUsername()" classname="com.bookin.bookin.service.CustomUserDetailServiceTest" time="0.016"/>
+  <testcase name="testRegister()" classname="com.bookin.bookin.service.CustomUserDetailServiceTest" time="0.005"/>
+  <testcase name="testRegister2()" classname="com.bookin.bookin.service.CustomUserDetailServiceTest" time="0.085"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
