@@ -19,7 +19,7 @@ public class Book {
     @Column(name = "author")
     private String author;
 
-    @Column(name = "description")
+    @Column(name = "description",length=2000)
     private String description;
 
     @Column(name = "copies")
